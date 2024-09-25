@@ -3,14 +3,14 @@ class DeliveryMethod(ABC):
     def deliver(self):
         pass
 
-class CourierDelivery(DeliveryMethod):
+class Courier(DeliveryMethod):
     def deliver(self):
         print("Доставка курьером.")
 
-class PostDelivery(DeliveryMethod):
+class Post(DeliveryMethod):
     def deliver(self):
         print("Доставка почтой.")
 
-class PickUpPointDelivery(DeliveryMethod):
+class PickUp(DeliveryMethod):
     def deliver(self):
         print("Доставка в пункт выдачи.")
